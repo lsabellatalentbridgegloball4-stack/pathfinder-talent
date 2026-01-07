@@ -1,59 +1,54 @@
-import { Search, FileText, Users, Handshake } from "lucide-react";
+import { Users, Search, Lightbulb, BarChart3 } from "lucide-react";
 
 const services = [
   {
-    icon: Search,
-    title: "Talent Sourcing & Screening",
-    description: "We identify skilled professionals and conduct initial screenings to assess experience, competencies, and role suitability.",
-  },
-  {
-    icon: FileText,
-    title: "Resume Review & Positioning",
-    description: "We support candidates in aligning their resumes with international hiring standards and employer expectations.",
-  },
-  {
     icon: Users,
-    title: "Shortlisting & Profile Presentation",
-    description: "Only shortlisted, consent-approved candidate profiles are presented to hiring managers.",
+    title: "Recruitment",
+    description: "End-to-end talent acquisition services connecting top candidates with leading organizations.",
   },
   {
-    icon: Handshake,
-    title: "Employer Talent Support",
-    description: "We assist employers by delivering job-ready candidates and coordinating interviews and follow-ups.",
+    icon: Search,
+    title: "Executive Search",
+    description: "Specialized headhunting for senior leadership and C-suite positions across industries.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Career Coaching",
+    description: "Personalized coaching to elevate your career trajectory and professional development.",
+  },
+  {
+    icon: BarChart3,
+    title: "Workforce Consulting",
+    description: "Strategic workforce planning and organizational development solutions.",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="section-padding bg-background">
+    <section id="services" className="section-padding bg-muted">
       <div className="section-container">
-        {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-gold/10 text-gold text-sm font-medium mb-4">
-            Our Services
-          </span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
-            Comprehensive Recruitment Solutions
+            Our Services
           </h2>
           <p className="text-muted-foreground text-lg">
-            From sourcing to placement, we provide end-to-end talent acquisition services tailored to your needs.
+            Comprehensive recruitment and workforce solutions tailored to your needs
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-card rounded-xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300 border border-border hover:border-gold/30"
+              className="bg-card rounded-xl p-6 text-center shadow-card hover:shadow-card-hover transition-all duration-300 border border-border hover:border-primary/30 group"
             >
-              <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors">
-                <service.icon className="w-7 h-7 text-gold" />
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 transition-colors">
+                <service.icon className="w-8 h-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 {service.description}
               </p>
             </div>
