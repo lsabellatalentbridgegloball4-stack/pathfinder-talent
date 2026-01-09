@@ -1,39 +1,32 @@
+import team1 from "@/assets/team-1.png";
+import team2 from "@/assets/team-2.jpg";
+import team3 from "@/assets/team-3.jpg";
+import team4 from "@/assets/team-4.jpg";
+
 const team = [
   {
     name: "Sarah Mitchell",
     role: "Managing Partner",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    image: team1,
     bio: "With over 15 years in global talent acquisition, Sarah leads our strategic partnerships and executive recruitment across multiple industries.",
   },
   {
     name: "Jessica Williams",
     role: "Senior Talent Acquisition Specialist",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+    image: team2,
     bio: "Jessica bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
   },
   {
     name: "Amanda Chen",
     role: "Global Recruitment Coordinator",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+    image: team3,
     bio: "Amanda specializes in leadership recruitment across healthcare, finance, and administration sectors with a consultative, value-driven approach.",
   },
   {
     name: "Rachel Thompson",
     role: "Director of Client Services",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
+    image: team4,
     bio: "Rachel oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities.",
-  },
-  {
-    name: "Maria Santos",
-    role: "Candidate Support Associate",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-    bio: "Maria drives recruitment excellence across all project verticals. She manages candidate pipelines and relationship development.",
-  },
-  {
-    name: "Victoria Adams",
-    role: "Employer Relations Officer",
-    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=400&fit=crop",
-    bio: "Victoria ensures operational efficiency across all recruitment initiatives and maintains seamless, transparent employer communications.",
   },
 ];
 
@@ -50,7 +43,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, index) => (
             <div 
               key={index}
