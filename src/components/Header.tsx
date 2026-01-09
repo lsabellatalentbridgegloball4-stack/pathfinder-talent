@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.webp";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,18 +32,8 @@ const Header = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-serif font-bold text-xl">P</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className={`font-serif font-semibold text-lg ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
-                PrimePath
-              </span>
-              <span className={`font-serif text-lg ml-1 ${isScrolled ? "text-primary" : "text-primary-foreground/80"}`}>
-                Talent
-              </span>
-            </div>
+          <a href="#" className="flex items-center gap-2">
+            <img src={logo} alt="PrimePath Talent Group" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
