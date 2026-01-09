@@ -7,40 +7,40 @@ import team6 from "@/assets/team-6.png";
 
 const team = [
   {
-    name: "Sarah Mitchell",
+    name: "Madison Oliver",
     role: "Managing Partner",
     image: team1,
-    bio: "With over 15 years in global talent acquisition, Sarah leads our strategic partnerships and executive recruitment across multiple industries.",
+    bio: "With over 15 years in global talent acquisition, Madison leads our strategic partnerships and executive recruitment across multiple industries.",
   },
   {
-    name: "Jessica Williams",
+    name: "Valentina Henry",
     role: "Senior Executive Recruiter",
     image: team2,
-    bio: "Jessica bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
+    bio: "Valentina bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
   },
   {
-    name: "Amanda Chen",
+    name: "Stella Grayson",
     role: "Global Talent Consultant",
     image: team3,
-    bio: "Amanda specializes in leadership recruitment across healthcare, finance, and administration sectors with a consultative, value-driven approach.",
+    bio: "Stella specializes in leadership recruitment across healthcare, finance, and administration sectors with a consultative, value-driven approach.",
   },
   {
-    name: "Rachel Thompson",
+    name: "Delilah Christopher",
     role: "Director of Client Services",
     image: team4,
-    bio: "Rachel oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities.",
+    bio: "Delilah oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities.",
   },
   {
-    name: "Maria Santos",
+    name: "Josephine Robert",
     role: "Candidate Support Associate",
     image: team5,
-    bio: "Maria drives recruitment excellence across all project verticals. She manages candidate pipelines and relationship development.",
+    bio: "Josephine drives recruitment excellence across all project verticals. She manages candidate pipelines and relationship development.",
   },
   {
-    name: "Victoria Adams",
+    name: "Catherine Jason",
     role: "Employer Relations Officer",
     image: team6,
-    bio: "Victoria ensures operational efficiency across all recruitment initiatives and maintains seamless, transparent employer communications.",
+    bio: "Catherine ensures operational efficiency across all recruitment initiatives and maintains seamless, transparent employer communications.",
   },
 ];
 

@@ -1,4 +1,5 @@
 import { Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.webp";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,13 +11,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-serif font-bold text-xl">P</span>
-              </div>
-              <div>
-                <span className="font-serif font-semibold text-lg">PrimePath</span>
-                <span className="font-serif text-lg ml-1 opacity-80">Talent Group</span>
-              </div>
+              <img src={logo} alt="PrimePath Talent Group" className="h-14 w-auto" />
             </div>
             <p className="text-primary-foreground/70 max-w-md mb-6">
               An international recruitment and talent acquisition firm dedicated to sourcing, screening, and positioning qualified professionals worldwide.
